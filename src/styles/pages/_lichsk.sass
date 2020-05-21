@@ -1,0 +1,57 @@
+.event-page
+	margin: 40px 0
+
+.table-calendar
+	border: 1px solid darken($white, 5%)
+	min-width: 1000px
+	thead
+		th
+			font-weight: 600
+			padding: 10px
+			text-align: center
+			border-bottom: 3px solid $blue
+			border-right: 1px solid darken($white, 5%)
+			&:nth-child(7)
+				border-right: none
+	tbody
+		tr
+			td
+				border-bottom: 1px solid darken($white, 5%)
+			&:last-child
+				td
+					border-bottom: none
+		td
+			padding: 10px
+			border-right: 1px solid darken($white, 5%)
+			width: calc(100% / 7)
+			&:nth-child(7)
+				border-right: none
+			&:hover
+				cursor: pointer
+				background: color-rgba($blue,0.03)
+	.event-block
+		time
+			display: inline-block
+			+fs(13rem)
+			font-weight: 500
+			color: $blue
+			// background: darken($white, 40%)
+			padding: 0px 3px
+			+bor-rad(3px)
+		.name
+			margin-top: 5px
+			+fs(13rem)
+			line-height: 1.3
+			font-weight: 500
+			+pos(rel,null)
+			padding-left: 15px
+			&::before
+				content: ''
+				display: block
+				width: 8px
+				height: 8px
+				+bor-rad(50px)
+				background: $blue
+				+pos(abs, 4px null null 0)
+			.time
+				color: darken($white, 60%)

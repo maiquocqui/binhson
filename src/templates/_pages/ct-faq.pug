@@ -1,0 +1,55 @@
+include ../_layout/breadcrumb
+
+.container
+	.row
+		.col-12.col-lg-8
+			section.faq-page
+				h1.page-title Câu hỏi thường gặp
+				#accordionExample.accordion.faq-list
+					.card
+						.card-header#headingOne
+							h2.mb-0(data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne').
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, repellat?
+						#collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+							.card-body.
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+
+					.card
+						.card-header#headingTwo
+							h2.mb-0.collapsed(data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo').
+								Lorem ipsum dolor, sit amet consectetur. Vitae, repellat?
+						#collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+							.card-body.
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								
+					.card
+						.card-header#headingThree
+							h2.mb-0.collapsed(data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree').
+								Lorem ipsum dolor, consectetur adipisicing elit. Vitae, repellat?
+						#collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+							.card-body.
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+		.col-12.col-lg-4
+			.sidebar-form.faq-form
+				.sidebar-title Đặt câu hỏi
+				.form-wrap
+					.module-title Bạn có thắc mắc cần giải đáp?
+					.form-group
+						input.form-control(type="text" placeholder="Họ và tên *")
+					.form-group
+						input.form-control(type="text" placeholder="Số điện thoại *")
+					.form-group
+						input.form-control(type="text" placeholder="Email *")
+					.form-group
+						select.form-control
+							option -- Đến từ * --
+							option CTCK
+							option Quỹ đầu tư
+							option Báo chí
+							option NĐT cá nhân
+					.form-group
+						input.form-control(type="text" placeholder="Đơn vị công tác")
+					.form-group
+						textarea.form-control(name="", cols="30", rows="3", placeholder="Nội dung câu hỏi *")
+					.btn-wrap.text-right
+						input(type="submit", value="Gửi")

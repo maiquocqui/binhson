@@ -1,0 +1,66 @@
+.faq-page
+	margin: 40px 0
+	.faq-list
+		.card
+			border: none
+			.card-header
+				border: none
+				background: none
+				cursor: pointer
+				h2
+					+fs(18rem)
+					font-weight: 500
+					+pos(rel,null)
+					padding-left: 20px
+					color: $main
+					+media-breakpoint-down(sm)
+						+fs(15rem)
+						padding-left: 15px
+					&::before
+						content: '\f059'
+						color: $blue
+						+fs(24rem)
+						+pos(abs, -5px null null -15px)
+						z-index: 3
+						+media-breakpoint-down(sm)
+							top: -7px
+					&.collapsed
+						color: darken($white,60% )
+						&::before
+							color: darken($white, 40%)
+						&:hover
+							color: $blue
+
+			.collapse
+				+bor-rad(5px)
+				// padding: 15px
+				background: darken($white, 3%)
+				&.show
+					background: darken($white, 3%)
+				.card-body
+
+.faq-form
+	margin: 40px 0
+	background: darken($white, 5%)
+	padding: 15px
+	+media-breakpoint-down(sm)
+		margin-top: 0
+	.sidebar-title
+		+fs(18rem)
+		color: $blue
+		font-weight: 600
+		margin-bottom: 10px
+		padding-left: 10px
+		border-left: 3px solid $red
+		// &::after
+		// 	content: ''
+		// 	display: block
+		// 	width: 30px
+		// 	height: 2px
+		// 	background: $red
+		// 	margin-top: 5px
+	.module-title
+		font-weight: 500
+	.frm-btnwrap
+		label
+			display: none

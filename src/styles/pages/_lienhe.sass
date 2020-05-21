@@ -1,0 +1,45 @@
+.contact-page
+	margin: 40px 0
+	.contact-info
+		.name
+			+fs(16rem)
+			font-weight: 600
+			text-transform: uppercase
+			color: $blue
+			margin-bottom: 15px
+		.sub-name
+			font-weight: 600
+			margin-bottom: 10px
+		ul
+			li
+				+pos(rel,null)
+				padding-left: 30px
+				margin-bottom: 10px
+				line-height: 1.3
+				.fa
+					+pos(abs, 2px null null 0)
+					color: $red
+				a, span
+					display: block
+					line-height: 1.3
+				a
+					&:hover
+						color: $blue
+	.contact-form
+		.module-title
+			font-weight: 500
+			margin-bottom: 10px
+		.frm-thanks
+			@extend .alert
+			@extend .alert-success
+			&::before
+				content: '\f005'
+				font-family: 'fontawesome'
+	.form-group-inline
+		+flexbox
+		align-items: center
+		align-content: center
+		label
+			width: 120px
+		.form-control, input, select
+			width: calc(100% - 120px)

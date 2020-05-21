@@ -1,0 +1,134 @@
+.baocao-page
+	margin-top: 40px
+	margin-bottom: 40px
+
+.baocao-list
+	margin-bottom: 20px
+	.name
+		width: 100%
+	.action
+		.btn-action
+			color: $blue
+			font-weight: 500
+			+fs(14rem)
+			.fa
+				margin-right: 5px
+			&:hover
+				color: lighten($blue, 10%)
+			+ .btn-action, &.red
+				margin-left: 15px
+				color: $red
+				&:hover
+					color: lighten($red, 10%)
+
+.table
+	border: 1px solid darken($white, 10%)
+	width: 100%
+	max-width: 100%
+	+media-breakpoint-down(sm)
+		width: 600px
+	thead
+		th
+			border: none
+			vertical-align: middle
+	th, td
+		padding: 15px
+	th
+		+fs(15rem)
+		line-height: 1.3
+		font-weight: 600
+		text-transform: uppercase
+		color: $white
+		background: $blue
+		border: none
+		vertical-align: middle
+		+media-breakpoint-down(sm)
+			+fs(14rem)
+	td
+		+fs(15rem)
+		line-height: 1.3
+		border: none
+		+media-breakpoint-down(sm)
+			+fs(14rem)
+	tbody
+		tr
+			&:nth-child(even)
+				background: color-rgba($blue,0.05)
+	.btn-action
+		color: $blue
+		+fs(16rem)
+		&:hover
+			color: lighten($blue, 10%)
+		&.red
+			color: $red
+			&:hover
+				color: lighten($red, 10%)
+.table1
+	+media-breakpoint-down(sm)
+		width: 600px
+	th, td
+		&:nth-child(1)
+			width: calc( 100% - 165px - 60px - 75px )
+		&:nth-child(2)
+			width: 165px
+			text-align: center
+		&:nth-child(3)
+			width: 60px
+			text-align: center
+		&:nth-child(4)
+			width: 75px
+			text-align: center
+	td
+		&:nth-child(2)
+			background: color-rgba($blue,0.05)
+.table2
+	+media-breakpoint-down(sm)
+		width: 600px
+	th, td
+		&:nth-child(1)
+			width: 120px
+		&:nth-child(2)
+			width: calc( 100% - 120px - 200px - 80px )
+		&:nth-child(3)
+			width: 200px
+		&:nth-child(4)
+			width: 75px
+			text-align: center
+.table3
+	th, td
+		vertical-align: middle
+		text-align: center
+		&:nth-child(1)
+			width: 55px
+		&:nth-child(3)
+			width: 120px
+.table4
+	.color
+		display: inline-block
+		width: 16px
+		height: 16px
+		vertical-align: middle
+		margin-top: -3px
+		margin-right: 10px
+.table5
+	th,td
+		&:nth-last-child(1)
+			width: 140px
+			text-align: right
+		&:nth-last-child(2)
+			width: 85px
+			text-align: right
+		&:nth-last-child(3)
+			width: 115px
+			text-align: right
+.table6
+	th,td
+		&:nth-last-child(1)
+			width: 140px
+			text-align: right
+		&:nth-last-child(2)
+			width: 85px
+			text-align: right
+		&:nth-last-child(3)
+			width: 115px
+			text-align: right
